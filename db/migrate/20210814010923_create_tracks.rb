@@ -2,7 +2,7 @@ class CreateTracks < ActiveRecord::Migration[6.1]
   def change
     create_table :tracks do |t|
       t.string :title
-      t.string :artist
+      t.belongs_to :artist
       t.string :string
       t.string :album
       t.string :string
